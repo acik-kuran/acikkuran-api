@@ -1,0 +1,1067 @@
+[
+  {
+    "id": 1,
+    "names": [
+      "Fatiha",
+      "Al-Faatiha",
+      "سُورَةُ ٱلْفَاتِحَةِ"
+    ],
+    "verse_count": 7
+  },
+  {
+    "id": 2,
+    "names": [
+      "Bakara",
+      "Al-Baqara",
+      "سورة البقرة"
+    ],
+    "verse_count": 286
+  },
+  {
+    "id": 3,
+    "names": [
+      "Ali İmran",
+      "Aal-i-Imraan",
+      "سورة آل عمران",
+      "ali imran",
+      "aliimran"
+    ],
+    "verse_count": 200
+  },
+  {
+    "id": 4,
+    "names": [
+      "Nisa",
+      "An-Nisaa",
+      "سورة النساء"
+    ],
+    "verse_count": 176
+  },
+  {
+    "id": 5,
+    "names": [
+      "Maide",
+      "Al-Maaida",
+      "سورة المائدة"
+    ],
+    "verse_count": 120
+  },
+  {
+    "id": 6,
+    "names": [
+      "Enam",
+      "Al-An'aam",
+      "سورة الأنعام"
+    ],
+    "verse_count": 165
+  },
+  {
+    "id": 7,
+    "names": [
+      "Araf",
+      "Al-A'raaf",
+      "سورة الأعراف"
+    ],
+    "verse_count": 206
+  },
+  {
+    "id": 8,
+    "names": [
+      "Enfal",
+      "Al-Anfaal",
+      "سورة الأنفال"
+    ],
+    "verse_count": 75
+  },
+  {
+    "id": 9,
+    "names": [
+      "Tevbe",
+      "At-Tawba",
+      "سورة التوبة"
+    ],
+    "verse_count": 129
+  },
+  {
+    "id": 10,
+    "names": [
+      "Yunus",
+      "Yunus",
+      "سورة يونس"
+    ],
+    "verse_count": 109
+  },
+  {
+    "id": 11,
+    "names": [
+      "Hud",
+      "Hud",
+      "سورة هود"
+    ],
+    "verse_count": 123
+  },
+  {
+    "id": 12,
+    "names": [
+      "Yusuf",
+      "Yusuf",
+      "سورة يوسف"
+    ],
+    "verse_count": 111
+  },
+  {
+    "id": 13,
+    "names": [
+      "Rad",
+      "Ar-Ra'd",
+      "سورة الرعد"
+    ],
+    "verse_count": 43
+  },
+  {
+    "id": 14,
+    "names": [
+      "İbrahim",
+      "Ibrahim",
+      "سورة ابراهيم",
+      "ibrahim"
+    ],
+    "verse_count": 52
+  },
+  {
+    "id": 15,
+    "names": [
+      "Hicr",
+      "Al-Hijr",
+      "سورة الحجر"
+    ],
+    "verse_count": 99
+  },
+  {
+    "id": 16,
+    "names": [
+      "Nahl",
+      "An-Nahl",
+      "سورة النحل"
+    ],
+    "verse_count": 128
+  },
+  {
+    "id": 17,
+    "names": [
+      "İsra",
+      "Al-Israa",
+      "سورة الإسراء",
+      "isra"
+    ],
+    "verse_count": 111
+  },
+  {
+    "id": 18,
+    "names": [
+      "Kehf",
+      "Al-Kahf",
+      "سورة الكهف"
+    ],
+    "verse_count": 110
+  },
+  {
+    "id": 19,
+    "names": [
+      "Meryem",
+      "Maryam",
+      "سورة مريم"
+    ],
+    "verse_count": 98
+  },
+  {
+    "id": 20,
+    "names": [
+      "Taha",
+      "Taa-Haa",
+      "سورة طه"
+    ],
+    "verse_count": 135
+  },
+  {
+    "id": 21,
+    "names": [
+      "Enbiya",
+      "Al-Anbiyaa",
+      "سورة الأنبياء"
+    ],
+    "verse_count": 112
+  },
+  {
+    "id": 22,
+    "names": [
+      "Hac",
+      "Al-Hajj",
+      "سورة الحج",
+      "hacc"
+    ],
+    "verse_count": 78
+  },
+  {
+    "id": 23,
+    "names": [
+      "Müminun",
+      "Al-Muminoon",
+      "سورة المؤمنون",
+      "muminun"
+    ],
+    "verse_count": 118
+  },
+  {
+    "id": 24,
+    "names": [
+      "Nur",
+      "An-Noor",
+      "سورة النور"
+    ],
+    "verse_count": 64
+  },
+  {
+    "id": 25,
+    "names": [
+      "Furkan",
+      "Al-Furqaan",
+      "سورة الفرقان"
+    ],
+    "verse_count": 77
+  },
+  {
+    "id": 26,
+    "names": [
+      "Şuara",
+      "Ash-Shu'araa",
+      "سورة الشعراء",
+      "şuara",
+      "suara"
+    ],
+    "verse_count": 227
+  },
+  {
+    "id": 27,
+    "names": [
+      "Neml",
+      "An-Naml",
+      "سورة النمل"
+    ],
+    "verse_count": 93
+  },
+  {
+    "id": 28,
+    "names": [
+      "Kasas",
+      "Al-Qasas",
+      "سورة القصص"
+    ],
+    "verse_count": 88
+  },
+  {
+    "id": 29,
+    "names": [
+      "Ankebut",
+      "Al-Ankaboot",
+      "سورة العنكبوت"
+    ],
+    "verse_count": 69
+  },
+  {
+    "id": 30,
+    "names": [
+      "Rum",
+      "Ar-Room",
+      "سورة الروم"
+    ],
+    "verse_count": 60
+  },
+  {
+    "id": 31,
+    "names": [
+      "Lokman",
+      "Luqman",
+      "سورة لقمان"
+    ],
+    "verse_count": 34
+  },
+  {
+    "id": 32,
+    "names": [
+      "Secde",
+      "As-Sajda",
+      "سورة السجدة"
+    ],
+    "verse_count": 30
+  },
+  {
+    "id": 33,
+    "names": [
+      "Ahzab",
+      "Al-Ahzaab",
+      "سورة الأحزاب"
+    ],
+    "verse_count": 73
+  },
+  {
+    "id": 34,
+    "names": [
+      "Sebe",
+      "Saba",
+      "سورة سَبَأ"
+    ],
+    "verse_count": 54
+  },
+  {
+    "id": 35,
+    "names": [
+      "Fatır",
+      "Faatir",
+      "سورة فاطر"
+    ],
+    "verse_count": 45
+  },
+  {
+    "id": 36,
+    "names": [
+      "Yasin",
+      "Yaseen",
+      "سورة يس"
+    ],
+    "verse_count": 83
+  },
+  {
+    "id": 37,
+    "names": [
+      "Saffat",
+      "As-Saaffaat",
+      "سورة الصافات"
+    ],
+    "verse_count": 182
+  },
+  {
+    "id": 38,
+    "names": [
+      "Sad",
+      "Saad",
+      "سورة ص"
+    ],
+    "verse_count": 88
+  },
+  {
+    "id": 39,
+    "names": [
+      "Zümer",
+      "Az-Zumar",
+      "سورة الزمر",
+      "zumer"
+    ],
+    "verse_count": 75
+  },
+  {
+    "id": 40,
+    "names": [
+      "Mümin",
+      "Ghafir",
+      "سورة غافر",
+      "mumin"
+    ],
+    "verse_count": 85
+  },
+  {
+    "id": 41,
+    "names": [
+      "Fussilet",
+      "Fussilat",
+      "سورة فصلت"
+    ],
+    "verse_count": 54
+  },
+  {
+    "id": 42,
+    "names": [
+      "Şura",
+      "Ash-Shura",
+      "سورة الشورى",
+      "sura",
+      "şura"
+    ],
+    "verse_count": 53
+  },
+  {
+    "id": 43,
+    "names": [
+      "Zuhruf",
+      "Az-Zukhruf",
+      "سورة الزخرف"
+    ],
+    "verse_count": 89
+  },
+  {
+    "id": 44,
+    "names": [
+      "Duhan",
+      "Ad-Dukhaan",
+      "سورة الدخان"
+    ],
+    "verse_count": 59
+  },
+  {
+    "id": 45,
+    "names": [
+      "Casiye",
+      "Al-Jaathiya",
+      "سورة الجاثية"
+    ],
+    "verse_count": 37
+  },
+  {
+    "id": 46,
+    "names": [
+      "Ahkaf",
+      "Al-Ahqaf",
+      "سورة الأحقاف"
+    ],
+    "verse_count": 35
+  },
+  {
+    "id": 47,
+    "names": [
+      "Muhammed",
+      "Muhammad",
+      "سورة محمد"
+    ],
+    "verse_count": 38
+  },
+  {
+    "id": 48,
+    "names": [
+      "Fetih",
+      "Al-Fath",
+      "سورة الفتح"
+    ],
+    "verse_count": 29
+  },
+  {
+    "id": 49,
+    "names": [
+      "Hucurat",
+      "Al-Hujuraat",
+      "سورة الحجرات"
+    ],
+    "verse_count": 18
+  },
+  {
+    "id": 50,
+    "names": [
+      "Kaf",
+      "Qaaf",
+      "سورة ق"
+    ],
+    "verse_count": 45
+  },
+  {
+    "id": 51,
+    "names": [
+      "Zariyat",
+      "Adh-Dhaariyat",
+      "سورة الذاريات"
+    ],
+    "verse_count": 60
+  },
+  {
+    "id": 52,
+    "names": [
+      "Tur",
+      "At-Tur",
+      "سورة الطور"
+    ],
+    "verse_count": 49
+  },
+  {
+    "id": 53,
+    "names": [
+      "Necm",
+      "An-Najm",
+      "سورة النجم"
+    ],
+    "verse_count": 62
+  },
+  {
+    "id": 54,
+    "names": [
+      "Kamer",
+      "Al-Qamar",
+      "سورة القمر"
+    ],
+    "verse_count": 55
+  },
+  {
+    "id": 55,
+    "names": [
+      "Rahman",
+      "Ar-Rahmaan",
+      "سورة الرحمن"
+    ],
+    "verse_count": 78
+  },
+  {
+    "id": 56,
+    "names": [
+      "Vakıa",
+      "Al-Waaqia",
+      "سورة الواقعة",
+      "vakia"
+    ],
+    "verse_count": 96
+  },
+  {
+    "id": 57,
+    "names": [
+      "Hadid",
+      "Al-Hadid",
+      "سورة الحديد"
+    ],
+    "verse_count": 29
+  },
+  {
+    "id": 58,
+    "names": [
+      "Mücadele",
+      "Al-Mujaadila",
+      "سورة المجادلة",
+      "mucadele"
+    ],
+    "verse_count": 22
+  },
+  {
+    "id": 59,
+    "names": [
+      "Haşr",
+      "Al-Hashr",
+      "سورة الحشر",
+      "hasr"
+    ],
+    "verse_count": 24
+  },
+  {
+    "id": 60,
+    "names": [
+      "Mümtehine",
+      "Al-Mumtahana",
+      "سورة الممتحنة",
+      "mumtehine"
+    ],
+    "verse_count": 13
+  },
+  {
+    "id": 61,
+    "names": [
+      "Saff",
+      "As-Saff",
+      "سورة الصف"
+    ],
+    "verse_count": 14
+  },
+  {
+    "id": 62,
+    "names": [
+      "Cuma",
+      "Al-Jumu'a",
+      "سورة الجمعة"
+    ],
+    "verse_count": 11
+  },
+  {
+    "id": 63,
+    "names": [
+      "Münafikun",
+      "Al-Munaafiqoon",
+      "سورة المنافقون",
+      "munafikun"
+    ],
+    "verse_count": 11
+  },
+  {
+    "id": 64,
+    "names": [
+      "Tegabun",
+      "At-Taghaabun",
+      "سورة التغابن"
+    ],
+    "verse_count": 18
+  },
+  {
+    "id": 65,
+    "names": [
+      "Talak",
+      "At-Talaaq",
+      "سورة الطلاق"
+    ],
+    "verse_count": 12
+  },
+  {
+    "id": 66,
+    "names": [
+      "Tahrim",
+      "At-Tahrim",
+      "سورة التحريم"
+    ],
+    "verse_count": 12
+  },
+  {
+    "id": 67,
+    "names": [
+      "Mülk",
+      "Al-Mulk",
+      "سورة الملك",
+      "mulk"
+    ],
+    "verse_count": 30
+  },
+  {
+    "id": 68,
+    "names": [
+      "Kalem",
+      "Al-Qalam",
+      "سورة القلم"
+    ],
+    "verse_count": 52
+  },
+  {
+    "id": 69,
+    "names": [
+      "Hâkka",
+      "Al-Haaqqa",
+      "سورة الحاقة",
+      "hakka"
+    ],
+    "verse_count": 52
+  },
+  {
+    "id": 70,
+    "names": [
+      "Mearic",
+      "Al-Ma'aarij",
+      "سورة المعارج"
+    ],
+    "verse_count": 44
+  },
+  {
+    "id": 71,
+    "names": [
+      "Nuh",
+      "Nooh",
+      "سورة نوح"
+    ],
+    "verse_count": 28
+  },
+  {
+    "id": 72,
+    "names": [
+      "Cin",
+      "Al-Jinn",
+      "سورة الجن"
+    ],
+    "verse_count": 28
+  },
+  {
+    "id": 73,
+    "names": [
+      "Müzzemmil",
+      "Al-Muzzammil",
+      "سورة المزمل",
+      "muzzemmil"
+    ],
+    "verse_count": 20
+  },
+  {
+    "id": 74,
+    "names": [
+      "Müddessir",
+      "Al-Muddaththir",
+      "سورة المدثر",
+      "muddessir"
+    ],
+    "verse_count": 56
+  },
+  {
+    "id": 75,
+    "names": [
+      "Kıyame",
+      "Al-Qiyaama",
+      "سورة القيامة",
+      "kiyame"
+    ],
+    "verse_count": 40
+  },
+  {
+    "id": 76,
+    "names": [
+      "İnsan",
+      "Al-Insaan",
+      "سورة الانسان",
+      "insan"
+    ],
+    "verse_count": 31
+  },
+  {
+    "id": 77,
+    "names": [
+      "Mürselat",
+      "Al-Mursalaat",
+      "سورة المرسلات",
+      "murselat"
+    ],
+    "verse_count": 50
+  },
+  {
+    "id": 78,
+    "names": [
+      "Nebe",
+      "An-Naba",
+      "سورة النبأ"
+    ],
+    "verse_count": 40
+  },
+  {
+    "id": 79,
+    "names": [
+      "Naziat",
+      "An-Naazi'aat",
+      "سورة النازعات"
+    ],
+    "verse_count": 46
+  },
+  {
+    "id": 80,
+    "names": [
+      "Abese",
+      "Abasa",
+      "سورة عبس"
+    ],
+    "verse_count": 42
+  },
+  {
+    "id": 81,
+    "names": [
+      "Tekvir",
+      "At-Takwir",
+      "سورة التكوير"
+    ],
+    "verse_count": 29
+  },
+  {
+    "id": 82,
+    "names": [
+      "İnfitar",
+      "Al-Infitaar",
+      "سورة الإنفطار",
+      "infitar"
+    ],
+    "verse_count": 19
+  },
+  {
+    "id": 83,
+    "names": [
+      "Mutaffifin",
+      "Al-Mutaffifin",
+      "سورة المطففين"
+    ],
+    "verse_count": 36
+  },
+  {
+    "id": 84,
+    "names": [
+      "İnşikak",
+      "Al-Inshiqaaq",
+      "سورة الإنشقاق",
+      "inşikak",
+      "inşıkak"
+    ],
+    "verse_count": 25
+  },
+  {
+    "id": 85,
+    "names": [
+      "Büruc",
+      "Al-Burooj",
+      "سورة البروج",
+      "buruc"
+    ],
+    "verse_count": 22
+  },
+  {
+    "id": 86,
+    "names": [
+      "Tarık",
+      "At-Taariq",
+      "سورة الطارق",
+      "tarik"
+    ],
+    "verse_count": 17
+  },
+  {
+    "id": 87,
+    "names": [
+      "Ala",
+      "Al-A'laa",
+      "سورة الأعلى"
+    ],
+    "verse_count": 19
+  },
+  {
+    "id": 88,
+    "names": [
+      "Gaşiye",
+      "Al-Ghaashiya",
+      "سورة الغاشية",
+      "gasiye"
+    ],
+    "verse_count": 26
+  },
+  {
+    "id": 89,
+    "names": [
+      "Fecr",
+      "Al-Fajr",
+      "سورة الفجر"
+    ],
+    "verse_count": 30
+  },
+  {
+    "id": 90,
+    "names": [
+      "Beled",
+      "Al-Balad",
+      "سورة البلد"
+    ],
+    "verse_count": 20
+  },
+  {
+    "id": 91,
+    "names": [
+      "Şems",
+      "Ash-Shams",
+      "سورة الشمس",
+      "şems",
+      "sems"
+    ],
+    "verse_count": 15
+  },
+  {
+    "id": 92,
+    "names": [
+      "Leyl",
+      "Al-Lail",
+      "سورة الليل"
+    ],
+    "verse_count": 21
+  },
+  {
+    "id": 93,
+    "names": [
+      "Duha",
+      "Ad-Dhuhaa",
+      "سورة الضحى"
+    ],
+    "verse_count": 11
+  },
+  {
+    "id": 94,
+    "names": [
+      "İnşirah",
+      "Ash-Sharh",
+      "سورة الشرح",
+      "inşırah",
+      "inşirah",
+      "insirah"
+    ],
+    "verse_count": 8
+  },
+  {
+    "id": 95,
+    "names": [
+      "Tin",
+      "At-Tin",
+      "سورة التين"
+    ],
+    "verse_count": 8
+  },
+  {
+    "id": 96,
+    "names": [
+      "Alak",
+      "Al-Alaq",
+      "سورة العلق"
+    ],
+    "verse_count": 19
+  },
+  {
+    "id": 97,
+    "names": [
+      "Kadir",
+      "Al-Qadr",
+      "سورة القدر"
+    ],
+    "verse_count": 5
+  },
+  {
+    "id": 98,
+    "names": [
+      "Beyyine",
+      "Al-Bayyina",
+      "سورة البينة"
+    ],
+    "verse_count": 8
+  },
+  {
+    "id": 99,
+    "names": [
+      "Zilzal",
+      "Az-Zalzala",
+      "سورة الزلزلة"
+    ],
+    "verse_count": 8
+  },
+  {
+    "id": 100,
+    "names": [
+      "Adiyat",
+      "Al-Aadiyaat",
+      "سورة العاديات"
+    ],
+    "verse_count": 11
+  },
+  {
+    "id": 101,
+    "names": [
+      "Karia",
+      "Al-Qaari'a",
+      "سورة القارعة"
+    ],
+    "verse_count": 11
+  },
+  {
+    "id": 102,
+    "names": [
+      "Tekasür",
+      "At-Takaathur",
+      "سورة التكاثر"
+    ],
+    "verse_count": 8
+  },
+  {
+    "id": 103,
+    "names": [
+      "Asr",
+      "Al-Asr",
+      "سورة العصر"
+    ],
+    "verse_count": 3
+  },
+  {
+    "id": 104,
+    "names": [
+      "Hümeze",
+      "Al-Humaza",
+      "سورة الهمزة",
+      "humeze"
+    ],
+    "verse_count": 9
+  },
+  {
+    "id": 105,
+    "names": [
+      "Fil",
+      "Al-Fil",
+      "سورة الفيل"
+    ],
+    "verse_count": 5
+  },
+  {
+    "id": 106,
+    "names": [
+      "Kureyş",
+      "Quraish",
+      "سورة قريش",
+      "kureys"
+    ],
+    "verse_count": 4
+  },
+  {
+    "id": 107,
+    "names": [
+      "Maun",
+      "Al-Maa'un",
+      "سورة الماعون"
+    ],
+    "verse_count": 7
+  },
+  {
+    "id": 108,
+    "names": [
+      "Kevser",
+      "Al-Kawthar",
+      "سورة الكوثر"
+    ],
+    "verse_count": 3
+  },
+  {
+    "id": 109,
+    "names": [
+      "Kafirun",
+      "Al-Kaafiroon",
+      "سورة الكافرون"
+    ],
+    "verse_count": 6
+  },
+  {
+    "id": 110,
+    "names": [
+      "Nasr",
+      "An-Nasr",
+      "سورة النصر"
+    ],
+    "verse_count": 3
+  },
+  {
+    "id": 111,
+    "names": [
+      "Tebbet",
+      "Al-Masad",
+      "سورة المسد"
+    ],
+    "verse_count": 5
+  },
+  {
+    "id": 112,
+    "names": [
+      "İhlas",
+      "Al-Ikhlaas",
+      "سورة الإخلاص",
+      "ihlas",
+      "ıhlas"
+    ],
+    "verse_count": 4
+  },
+  {
+    "id": 113,
+    "names": [
+      "Felak",
+      "Al-Falaq",
+      "سورة الفلق"
+    ],
+    "verse_count": 5
+  },
+  {
+    "id": 114,
+    "names": [
+      "Nas",
+      "An-Naas",
+      "سورة الناس"
+    ],
+    "verse_count": 6
+  }
+]

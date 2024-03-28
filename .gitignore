@@ -1,0 +1,6 @@
+node_modules/
+.tap/
+.logs/
+.DS_Store
+.env
+zieg
