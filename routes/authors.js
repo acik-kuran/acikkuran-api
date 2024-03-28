@@ -1,6 +1,10 @@
 const cacheOrFetch = require('../utils/cacheOrFetch')
 
 async function routes(fastify) {
+  // ------------------------------
+  // GET /authors
+  // ------------------------------
+
   fastify.get('/authors', async (_, reply) => {
     const cacheKey = `a`
 

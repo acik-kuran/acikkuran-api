@@ -3,6 +3,10 @@ const defaultAuthors = require('../data/defaultAuthors')
 const { isNumeric } = require('../utils/funcs')
 
 async function routes(fastify) {
+  // ------------------------------
+  // GET /page/:page_number
+  // ------------------------------
+
   fastify.get('/page/:page_number', async (req, reply) => {
     const page_number = req.params.page_number || 0
     const author_id = req.query.author || defaultAuthors['tr']
