@@ -6,7 +6,8 @@
 
 [https://acikkuran.com](https://acikkuran.com)
 
-O mankind: there has come to you evidence from your Lord; and We have sent down to you a clear light. — [Qur'an 4:174](https://en.acikkuran.com/4/174)
+O mankind: there has come to you evidence from your Lord; and We have sent down to you a clear light.
+— [Qur'an 4:174](https://en.acikkuran.com/4/174)
 
 ## Contributing Guideline
 
@@ -256,7 +257,6 @@ Response body:
           "number": 2
         }
       ]
-    }
     }
   }
 }
@@ -753,7 +753,7 @@ Response body:
 
 ```json
 {
-  data: {
+  "data": {
     {
       "id": 6208,
       "surah": {
@@ -820,7 +820,7 @@ Response body:
           }
         ]
       }
-    },
+    }
   }
 }
 ```
