@@ -340,8 +340,12 @@ async function routes(fastify) {
     const latin = req.params.latin
     const author_id = req.query.author || defaultAuthors['tr']
     const page = +req.query.page || 1
+    const limit = +req.query.limit || 20
 
-    const cacheKey = `rlvp-${latin}-a${author_id}-p${page}`
+    let cacheKey = `rlvp-${latin}-a${author_id}-p${page}`
+    if(limit !== 20) {
+      cacheKey = `${cacheKey}-l${limit}`
+    }
 
     const fetchAndReply = async () => {
       if (!latin || isNumeric(latin)) {
@@ -357,7 +361,7 @@ async function routes(fastify) {
       }
 
       // const limit and offset for pagination with page number, default limit is 20
-      const limit = +req.query.limit || 20
+     
       const offset = (page - 1) * limit || 0
 
       function mergeObjects(obj1, obj2) {
