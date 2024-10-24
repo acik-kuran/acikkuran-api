@@ -79,7 +79,6 @@ function buildFastify() {
   fastify.register(require('./routes/roots'), { logLevel: 'debug' })
   fastify.register(require('./routes/pages'), { logLevel: 'debug' })
   fastify.register(require('./routes/searches'), { logLevel: 'debug' })
-  fastify.register(require('./routes/zieg/surahs'), { logLevel: 'debug' })
 
   fastify.register(FastifyCors, {
     origin: '*',
