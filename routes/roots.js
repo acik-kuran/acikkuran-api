@@ -140,9 +140,9 @@ async function routes(fastify) {
                 page_number: item.page_number,
                 name_original: item.name_original,
                 audio: {
-                  mp3: `https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/${item.audio}.mp3`,
+                  mp3: `https://audio.acikkuran.com/tr/${item.audio}.mp3`,
                   duration: item.duration,
-                  mp3_en: `https://archive.org/download/QURANITE-COM/${item.audio_en}.mp3`,
+                  mp3_en: `https://audio.acikkuran.com/en/${item.audio_en}.mp3`,
                   duration_en: item.duration_en,
                 },
               },
@@ -343,7 +343,7 @@ async function routes(fastify) {
     const limit = +req.query.limit || 20
 
     let cacheKey = `rlvp-${latin}-a${author_id}-p${page}`
-    if(limit !== 20) {
+    if (limit !== 20) {
       cacheKey = `${cacheKey}-l${limit}`
     }
 
@@ -361,7 +361,7 @@ async function routes(fastify) {
       }
 
       // const limit and offset for pagination with page number, default limit is 20
-     
+
       const offset = (page - 1) * limit || 0
 
       function mergeObjects(obj1, obj2) {
@@ -446,9 +446,9 @@ async function routes(fastify) {
                 page_number: item.page_number,
                 name_original: item.name_original,
                 audio: {
-                  mp3: `https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/${item.audio}.mp3`,
+                  mp3: `https://audio.acikkuran.com/tr/${item.audio}.mp3`,
                   duration: item.duration,
-                  mp3_en: `https://archive.org/download/QURANITE-COM/${item.audio_en}.mp3`,
+                  mp3_en: `https://audio.acikkuran.com/en/${item.audio_en}.mp3`,
                   duration_en: item.duration_en,
                 },
               },

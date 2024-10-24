@@ -159,9 +159,9 @@ Response body:
       "page_number": 0,
       "name_original": "سُورَةُ ٱلْفَاتِحَةِ",
       "audio": {
-        "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/05-fatiha.mp3",
+        "mp3": "https://audio.acikkuran.com/tr/1.mp3",
         "duration": 38,
-        "mp3_en": "https://archive.org/download/QURANITE-COM/001.mp3",
+        "mp3_en": "https://audio.acikkuran.com/en/1.mp3",
         "duration_en": 29
       }
     },
@@ -174,9 +174,9 @@ Response body:
       "page_number": 1,
       "name_original": "سورة البقرة",
       "audio": {
-        "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/87-bakara.mp3",
+        "mp3": "https://audio.acikkuran.com/tr/2.mp3",
         "duration": 5982,
-        "mp3_en": "https://archive.org/download/QURANITE-COM/002.mp3",
+        "mp3_en": "https://audio.acikkuran.com/en/2.mp3",
         "duration_en": 5503
       }
     }
@@ -207,9 +207,9 @@ Response body:
     "verse_count": 165,
     "page_number": 127,
     "audio": {
-      "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/55-enam.mp3",
+      "mp3": "https://audio.acikkuran.com/tr/6.mp3",
       "duration": 2995,
-      "mp3_en": "https://archive.org/download/QURANITE-COM/006.mp3",
+      "mp3_en": "https://audio.acikkuran.com/en/6.mp3",
       "duration_en": 2837
     },
     "zero": {
@@ -297,9 +297,9 @@ Response body:
       "page_number": 127,
       "name_original": "سورة الأنعام",
       "audio": {
-        "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/55-enam.mp3",
+        "mp3": "https://audio.acikkuran.com/tr/6.mp3",
         "duration": 2995,
-        "mp3_en": "https://archive.org/download/QURANITE-COM/006.mp3",
+        "mp3_en": "https://audio.acikkuran.com/en/6.mp3",
         "duration_en": 2837
       }
     },
@@ -559,7 +559,7 @@ Response body:
         "page_number": 281,
         "name_original": "سورة الإسراء",
         "audio": {
-          "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/50-isra.mp3",
+          "mp3": "https://audio.acikkuran.com/tr/17.mp3",
           "duration": 1423
         }
       },
@@ -659,9 +659,9 @@ Response body:
         "page_number": 0,
         "name_original": "سُورَةُ ٱلْفَاتِحَةِ",
         "audio": {
-          "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/05-fatiha.mp3",
+          "mp3": "https://audio.acikkuran.com/tr/1.mp3",
           "duration": 38,
-          "mp3_en": "https://archive.org/download/QURANITE-COM/001.mp3",
+          "mp3_en": "https://audio.acikkuran.com/en/1.mp3",
           "duration_en": 29
         }
       },
@@ -841,9 +841,9 @@ Response body:
         "page_number": 603,
         "name_original": "سورة الكافرون",
         "audio": {
-          "mp3": "https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/18-kafirun.mp3",
+          "mp3": "https://audio.acikkuran.com/tr/109.mp3",
           "duration": 32,
-          "mp3_en": "https://archive.org/download/QURANITE-COM/109.mp3",
+          "mp3_en": "https://audio.acikkuran.com/en/109.mp3",
           "duration_en": 27
         }
       },

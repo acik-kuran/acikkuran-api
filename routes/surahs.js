@@ -26,9 +26,9 @@ async function routes(fastify) {
             page_number: surah.page_number,
             name_original: surah.name_original,
             audio: {
-              mp3: `https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/${surah.audio}.mp3`,
+              mp3: `https://audio.acikkuran.com/tr/${surah.audio}.mp3`,
               duration: surah.duration,
-              mp3_en: `https://archive.org/download/QURANITE-COM/${surah.audio_en}.mp3`,
+              mp3_en: `https://audio.acikkuran.com/en/${surah.audio_en}.mp3`,
               duration_en: surah.duration_en,
             },
           }
@@ -133,9 +133,9 @@ async function routes(fastify) {
         verse_count: response.verse_count,
         page_number: response.page_number,
         audio: {
-          mp3: `https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/${response.audio}.mp3`,
+          mp3: `https://audio.acikkuran.com/tr/${response.audio}.mp3`,
           duration: response.duration,
-          mp3_en: `https://archive.org/download/QURANITE-COM/${response.audio_en}.mp3`,
+          mp3_en: `https://audio.acikkuran.com/en/${response.audio_en}.mp3`,
           duration_en: response.duration_en,
         },
         zero: zero

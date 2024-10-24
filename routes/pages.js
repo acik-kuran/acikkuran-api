@@ -86,9 +86,9 @@ async function routes(fastify) {
               page_number: row.page_number,
               name_original: row.name_original,
               audio: {
-                mp3: `https://archive.org/download/INDIRILIS_SIRASINA_GORE_SESLI_KURAN_MEALI/${row.audio}.mp3`,
+                mp3: `https://audio.acikkuran.com/tr/${row.audio}.mp3`,
                 duration: row.duration,
-                mp3_en: `https://archive.org/download/QURANITE-COM/${row.audio_en}.mp3`,
+                mp3_en: `https://audio.acikkuran.com/en/${row.audio_en}.mp3`,
                 duration_en: row.duration_en,
               },
             },
