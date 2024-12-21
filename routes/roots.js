@@ -523,6 +523,169 @@ async function routes(fastify) {
 
     await cacheOrFetch({ fastify, cacheKey, fetchAndReply, reply })
   })
+
+  // ----------------------------
+  // GET /rootsverses?root_ids=1,2,3
+  // ----------------------------
+
+  fastify.get('/rootsverses', async (req, reply) => {
+    const { root_ids } = req.query
+    const author_id = req.query.author || defaultAuthors['tr']
+    const page = +req.query.page || 1
+    const limit = +req.query.limit || 20
+
+    // Validate root_ids parameter
+    if (!root_ids || !root_ids.split(',').every((id) => isNumeric(id))) {
+      return reply.send({ data: { error: 'invalid-root-ids' } })
+    }
+
+    const rootIdsArray = root_ids.split(',').map((id) => parseInt(id))
+    const cacheKey = `rvp-${root_ids}-a${author_id}-p${page}-l${limit}`
+
+    const fetchAndReply = async () => {
+      if (!author_id || !isNumeric(author_id) || +author_id < 0) {
+        return { data: { error: 'invalid-author' } }
+      }
+
+      if (!page || +page < 1) {
+        return { data: { error: 'invalid-page-number' } }
+      }
+
+      const offset = (page - 1) * limit || 0
+
+      // Get total count
+      const getCount = await fastify.pg.query(
+        `SELECT COUNT(*) AS result_count 
+         FROM acikkuran_verses v
+         WHERE EXISTS (
+           SELECT 1
+           FROM acikkuran_verseparts vp
+           WHERE vp.verse_id = v.id
+             AND vp.root_id = ANY($1)
+           GROUP BY vp.verse_id
+           HAVING COUNT(DISTINCT vp.root_id) = $2
+         )`,
+        [rootIdsArray, rootIdsArray.length]
+      )
+
+      const result_count = getCount?.rows?.[0]?.result_count || 0
+      const lastResponse = await fastify.pg.query(
+        `SELECT v.id as verse_id, v.page as verse_page, v.verse_number as verse_number, v.verse as verse, v.verse_simplified, v.verse_without_vowel, v.transcription as verse_transcription_tr, v.transcription_en as verse_transcription_en, v.juz_number as verse_juz_number,
+                s.id as surah_id, s.name_original, s.name, s.name_en, s.slug, s.verse_count, s.page_number, s.audio, s.duration, s.audio_en, s.duration_en,
+                at.id as translation_id, at.text as translation_text,
+                jsonb_build_object('id', at.id, 'author', jsonb_build_object('id', a.id, 'name', a.name, 'description', a.description, 'language', a.language),'text', at.text) AS translation,
+                jsonb_agg(jsonb_build_object('id', vp.id, 'root_id', vp.root_id, 'verse_id', vp.verse_id, 'sort_number', vp.sort_number, 'arabic', vp.arabic, 'transcription_en', vp.transcription_en, 'translation_en', vp.translation_en, 'transcription_tr', vp.transcription_tr, 'translation_tr', vp.translation_tr, 'details', vp.details)) AS verseparts
+         FROM acikkuran_verses v
+         LEFT JOIN acikkuran_surahs s ON s.id = v.surah_id
+         LEFT JOIN acikkuran_translations at ON at.verse_id = v.id AND at.author_id = $3
+         LEFT JOIN acikkuran_authors a ON a.id = at.author_id
+         LEFT JOIN acikkuran_verseparts vp ON vp.verse_id = v.id AND vp.root_id = ANY($1)
+         WHERE EXISTS (
+           SELECT 1 
+           FROM acikkuran_verseparts vp2
+           WHERE vp2.verse_id = v.id
+             AND vp2.root_id = ANY($1)
+           GROUP BY vp2.verse_id
+           HAVING COUNT(DISTINCT vp2.root_id) = $2  
+         )
+         GROUP BY v.id, s.id, at.id, a.id
+         ORDER BY v.id ASC
+         OFFSET $4 LIMIT $5`,
+        [rootIdsArray, rootIdsArray.length, author_id, offset, limit]
+      )
+
+      const rootsResponse = await fastify.pg.query(
+        `SELECT id, latin, arabic, mean, mean_en, transcription, transcription_en, count
+         FROM acikkuran_roots
+         WHERE id = ANY($1)`,
+        [rootIdsArray]
+      )
+
+      if (lastResponse.rows.length > 0) {
+        const data = lastResponse?.rows?.map((item) => {
+          if (!item.translation_id) {
+            return { data: { error: 'invalid-author' } }
+          }
+
+          return {
+            verse: {
+              id: item.verse_id,
+              page: item.verse_page,
+              verse_number: item.verse_number,
+              verse: item.verse,
+              verse_simplified: item.verse_simplified,
+              verse_without_vowel: item.verse_without_vowel,
+              transcription_tr: item.verse_transcription_tr,
+              transcription_en: item.verse_transcription_en,
+              juz_number: item.verse_juz_number,
+            },
+            surah: {
+              id: item.surah_id,
+              name_original: item.name_original,
+              name: item.name,
+              name_en: item.name_en,
+              slug: item.slug,
+              verse_count: item.verse_count,
+              page_number: item.page_number,
+              audio: {
+                url: `https://audio.acikkuran.com/tr/${item.audio}.mp3`,
+                duration: item.duration,
+              },
+              audio_en: {
+                url: `https://audio.acikkuran.com/en/${item.audio_en}.mp3`,
+                duration: item.duration_en,
+              },
+            },
+            translation: item.translation,
+            verseparts: item.verseparts,
+          }
+        })
+
+        const roots = rootsResponse?.rows?.map((item) => {
+          return {
+            id: item.id,
+            latin: item.latin,
+            arabic: item.arabic,
+            mean: item.mean,
+            mean_en: item.mean_en,
+            trancription: item.transcription,
+            transcription_en: item.transcription_en,
+            count: item.count,
+          }
+        })
+
+        const meta_info = {
+          links: {
+            first: `/rootsverses?root_ids=${root_ids}&author=${author_id}&page=1`,
+            prev:
+              page > 1
+                ? `/rootsverses?root_ids=${root_ids}&author=${author_id}&page=${page - 1}`
+                : null,
+            next:
+              offset + limit < result_count
+                ? `/rootsverses?root_ids=${root_ids}&author=${author_id}&page=${page + 1}`
+                : null,
+            last: `/rootsverses?root_ids=${root_ids}&author=${author_id}&page=${Math.ceil(result_count / limit)}`,
+          },
+          meta: {
+            current_page: +page,
+            from: offset,
+            last_page: Math.ceil(result_count / limit),
+            path: `/rootsverses?root_ids=${root_ids}&page=${page}&author=${author_id}`,
+            per_page: limit,
+            to: offset + limit,
+            total: +result_count,
+          },
+        }
+
+        return { ...meta_info, roots, data }
+      } else {
+        return { data: [] }
+      }
+    }
+
+    await cacheOrFetch({ fastify, cacheKey, fetchAndReply, reply })
+  })
 }
 
 module.exports = routes
